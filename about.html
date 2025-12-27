@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Durga CSC Center</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, Arial, sans-serif;
+}
+
+/* BACKGROUND */
+body{
+  min-height:100vh;
+  background-image:url("https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  color:#fff;
+}
+
+/* OVERLAY */
+.page-overlay{
+  min-height:100vh;
+  background: rgba(0,0,0,0.55);
+  padding-top:80px;
+}
+
+/* NAVBAR */
+.navbar{
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  backdrop-filter: blur(5px);
+}
+
+.navbar .logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#000;
+}
+
+.navbar ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+.navbar ul li a{
+  text-decoration:none;
+  color:#000;
+  font-size:16px;
+  padding:5px 10px;
+  transition:0.3s;
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+.navbar ul li a:hover{
+  background: rgba(0,0,0,0.2);
+  border-radius:5px;
+  color:#fff;
+}
+
+.navbar .hamburger{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+@media (max-width:768px){
+  .navbar ul{
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    background: rgba(255,255,255,0.9);
+    height: 100vh;
+    width: 200px;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    gap: 15px;
+    transition:0.3s;
+  }
+  .navbar ul.active{
+    right:0;
+  }
+  .navbar .hamburger{
+    display:block;
+  }
+}
+
+/* PAGE CONTENT */
+.page-content{
+  max-width:1000px;
+  margin:0 auto;
+  padding:20px;
+}
+
+.page-content h1{
+  text-align:center;
+  color:#ffeb3b;
+  margin-bottom:20px;
+}
+
+.page-content p, .page-content li{
+  line-height:1.8;
+  font-size:16px;
+}
+
+.page-content ul{
+  list-style: disc;
+  padding-left:20px;
+  margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+  background:rgba(0,0,0,0.8);
+  color:#fff;
+  padding:30px 20px;
+  margin-top:40px;
+}
+
+footer h3{
+  color:#ffeb3b;
+  margin-bottom:10px;
+}
+
+footer a{
+  color:#fff;
+  text-decoration:none;
+}
+
+footer .social-btn{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+
+footer .social-btn a{
+  padding:8px 12px;
+  border-radius:5px;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  color:#fff;
+}
+
+footer .whatsapp{background:#25D366;}
+footer .instagram{background:#E1306C;}
+
+@media(max-width:768px){
+  .page-content{padding:10px;}
+}
+</style>
+</head>
+<body>
+
+<div class="page-overlay">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Durga CSC Center</div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="index.html"><i class="fas fa-cogs"></i> Services</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="contect.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="https://whatsapp.com/channel/0029VaB2q8hH5JLrbc43ft42"><i class="fab fa-whatsapp"></i> Join WhatsApp</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <div class="page-content">
+    <h1>About Durga CSC Center</h1>
+
+    <p><strong>Durga CSC Center</strong> डिजिटल इंडिया की दिशा में आपकी मदद करने वाला एक विश्वसनीय प्लेटफॉर्म है। हम सरकारी योजनाओं, CSC jobs, admit card downloads, results, और अन्य डिजिटल सेवाएँ प्रदान करते हैं। हमारा उद्देश्य यह है कि हर नागरिक को सरकारी सेवाओं तक आसान और तेज़ पहुँच मिले।</p>
+
+    <h2>हमारी Services</h2>
+    <ul>
+      <li>ऑनलाइन आवेदन फॉर्म भरना और जमा करना</li>
+      <li>Admit Card / Result डाउनलोड करना</li>
+      <li>सारकारी पहचान पत्र जैसे Aadhar, PAN, Voter ID आदि सेवाएँ</li>
+      <li>RTO सेवाएँ: Driving License, Vehicle Registration आदि</li>
+      <li>Print Services: PDF, फोटो कॉपी, स्कैनिंग</li>
+      <li>किसानों के लिए योजनाएँ और सब्सिडी आवेदन</li>
+      <li>Utility Bill Payments और Mobile/DTH Recharge</li>
+    </ul>
+
+    <h2>हमारी Vision & Mission</h2>
+    <p><strong>Vision:</strong> डिजिटल सेवाओं को हर नागरिक तक सरल और सुरक्षित रूप में पहुँचाना।</p>
+    <p><strong>Mission:</strong> CSC सेवाओं, सरकारी नौकरियों और डिजिटल प्लेटफॉर्म्स की सही जानकारी प्रदान करना।</p>
+
+    <h2>Important Notes</h2>
+    <ul>
+      <li>यह वेबसाइट केवल जानकारी हेतु है; आवेदन के लिए हमेशा official portals का उपयोग करें।</li>
+      <li>Admit card या result download करते समय विवरण सही है या नहीं यह सुनिश्चित करें।</li>
+      <li>अधिक जानकारी या किसी समस्या के लिए हमसे संपर्क करें।</li>
+    </ul>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div style="max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px;">
+
+      <div style="flex:1; min-width:250px;">
+        <h3>Contact Us</h3>
+        <p>Phone: +91 7879903332</p>
+        <p>Email: info@durgacsc.in</p>
+      </div>
+
+      <div style="flex:1; min-width:200px;">
+        <h3>Follow Us</h3>
+        <div class="social-btn">
+          <a href="https://wa.me/917879903332" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:20px; font-size:14px; color:rgba(255,255,255,0.7);">
+      &copy; 2025 Durga CSC Center. All rights reserved.
+    </div>
+  </footer>
+
+</div>
+
+<!-- Hamburger JS -->
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.navbar ul');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>

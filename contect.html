@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Durga CSC Center</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, Arial, sans-serif;
+}
+
+/* BACKGROUND */
+body{
+  min-height:100vh;
+  background-image:url("https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  color:#fff;
+}
+
+/* OVERLAY */
+.page-overlay{
+  min-height:100vh;
+  background: rgba(0,0,0,0.55);
+  padding-top:80px;
+}
+
+/* NAVBAR */
+.navbar{
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  backdrop-filter: blur(5px);
+}
+
+.navbar .logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#000;
+}
+
+.navbar ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+.navbar ul li a{
+  text-decoration:none;
+  color:#000;
+  font-size:16px;
+  padding:5px 10px;
+  transition:0.3s;
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+.navbar ul li a:hover{
+  background: rgba(0,0,0,0.2);
+  border-radius:5px;
+  color:#fff;
+}
+
+.navbar .hamburger{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+@media (max-width:768px){
+  .navbar ul{
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    background: rgba(255,255,255,0.9);
+    height: 100vh;
+    width: 200px;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    gap: 15px;
+    transition:0.3s;
+  }
+  .navbar ul.active{
+    right:0;
+  }
+  .navbar .hamburger{
+    display:block;
+  }
+}
+
+/* PAGE CONTENT */
+.page-content{
+  max-width:800px;
+  margin:0 auto;
+  padding:20px;
+}
+
+.page-content h1{
+  text-align:center;
+  color:#ffeb3b;
+  margin-bottom:20px;
+}
+
+.contact-info, .contact-form{
+  background:rgba(0,0,0,0.5);
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:30px;
+}
+
+.contact-info h3, .contact-form h3{
+  color:#ffeb3b;
+  margin-bottom:10px;
+}
+
+.contact-info p, .contact-info a{
+  line-height:1.8;
+  color:#fff;
+  text-decoration:none;
+}
+
+.contact-form form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.contact-form input, .contact-form textarea{
+  padding:10px;
+  border-radius:5px;
+  border:none;
+  font-size:16px;
+}
+
+.contact-form button{
+  padding:10px 15px;
+  border:none;
+  border-radius:5px;
+  background:#ff6600;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.contact-form button:hover{
+  background:#e65c00;
+}
+
+/* Social buttons */
+.social-btn{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+
+.social-btn a{
+  padding:8px 12px;
+  border-radius:5px;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  color:#fff;
+}
+
+.social-btn .whatsapp{background:#25D366;}
+.social-btn .instagram{background:#E1306C;}
+
+@media(max-width:768px){
+  .page-content{padding:10px;}
+}
+</style>
+</head>
+<body>
+
+<div class="page-overlay">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Durga CSC Center</div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="index.html"><i class="fas fa-cogs"></i> Services</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="contect.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="https://whatsapp.com/channel/0029VaB2q8hH5JLrbc43ft42"><i class="fab fa-whatsapp"></i> Join WhatsApp</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <div class="page-content">
+    <h1>Contact Us</h1>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Our Contact Details</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Address: Durga CSC Center,Armarikala,Dist-Balod, Chhattisgarh Pin Code-491222, India</p>
+      <p><i class="fas fa-phone"></i> Phone: +91 7879903332</p>
+      <p><i class="fas fa-envelope"></i> Email: info@durgacsc.in</p>
+
+      <!-- Social Buttons -->
+      <div class="social-btn">
+        <a href="https://wa.me/917879903332" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+
+   
+
+<!-- Hamburger JS -->
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.navbar ul');
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
