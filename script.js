@@ -92,6 +92,7 @@ const serviceLinks={
 "Durg Science Clg":"https://www.govtsciencecollegedurg.ac.in/",
 "CGBSE":"https://cgbse.nic.in/",
 "CGVyapam":"https://vyapamprofile.cgstate.gov.in/online/",
+"CG Police":"https://citizen.cgpolice.gov.in/citizen/login.htm?lang=en&stov=9X6T-S8WW-G731-3M0P-VV6R-DUBI-17R3-JRKU#",
 };
 
 
